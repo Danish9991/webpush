@@ -27,8 +27,7 @@ app.post('/subscribe', (req, res)=>{
     webpush.sendNotification(subscription, payload).catch(err => console.log(err));
 })
 
-
-
+//port
 app.listen(3000, ()=>{
     console.log("server is running on port 3000");
 })
